@@ -14,7 +14,7 @@ export default function PrivacyPage() {
           </p>
 
           <p className="text-slate-600 dark:text-slate-400 mb-8">
-            SenseFlow, Inc. ("SenseFlow", "we", "our", or "us") operates the websites available at senseflow.io and app.senseflow.io (the "Site") and any early-access or beta services we may offer (together, the "Services"). This policy explains, in plain English, what we collect, why we collect it, and how you can reach us about your data.
+            SenseFlow, Inc. (&ldquo;SenseFlow&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) operates the websites available at senseflow.io and app.senseflow.io (the &ldquo;Site&rdquo;) and any early-access or beta services we may offer (together, the &ldquo;Services&rdquo;). This policy explains, in plain English, what we collect, why we collect it, and how you can reach us about your data.
           </p>
 
           <section className="mb-8">
@@ -25,10 +25,10 @@ export default function PrivacyPage() {
               We keep this lean and only collect what we need to run and improve the Services:
             </p>
             <ul className="list-disc list-inside text-slate-600 dark:text-slate-400 mb-4 ml-4">
-              <li>Call data – call history/metadata (time, duration, participants), call recordings, and transcripts.</li>
-              <li>Contact info you give us – email address, name, company, role, phone number, etc.</li>
-              <li>Technical/session data – IP address, device/browser info, and basic logs needed to keep the site secure and functional.</li>
-              <li>Support messages or feedback – anything you choose to send us by email or forms.</li>
+              <li>Call data &ndash; call history/metadata (time, duration, participants), call recordings, and transcripts.</li>
+              <li>Contact info you give us &ndash; email address, name, company, role, phone number, etc.</li>
+              <li>Technical/session data &ndash; IP address, device/browser info, and basic logs needed to keep the site secure and functional.</li>
+              <li>Support messages or feedback &ndash; anything you choose to send us by email or forms.</li>
             </ul>
             <p className="text-slate-600 dark:text-slate-400">
               We do not intentionally collect sensitive personal data.
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
               5. Sharing & vendors
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              We don't sell personal data. We may share limited information with trusted service providers who help us host, deliver, analyze, or support the Services (e.g., cloud hosting, email delivery). They only access your data to perform services for us and must protect it.
+              We don&apos;t sell personal data. We may share limited information with trusted service providers who help us host, deliver, analyze, or support the Services (e.g., cloud hosting, email delivery). They only access your data to perform services for us and must protect it.
             </p>
             <p className="text-slate-600 dark:text-slate-400">
               We may also disclose information if required by law or to protect rights, safety, or property.
@@ -92,7 +92,7 @@ export default function PrivacyPage() {
               6. Data retention
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              We keep personal data only as long as needed for the purposes above, then delete or anonymize it. If you ask us to delete your data, we'll do so unless we must keep it for legal reasons.
+              We keep personal data only as long as needed for the purposes above, then delete or anonymize it. If you ask us to delete your data, we&apos;ll do so unless we must keep it for legal reasons.
             </p>
           </section>
 
@@ -119,7 +119,7 @@ export default function PrivacyPage() {
               8. Children
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              Our Services are not directed to individuals under 16. If you believe a child provided us data, contact us and we'll delete it.
+              Our Services are not directed to individuals under 16. If you believe a child provided us data, contact us and we&apos;ll delete it.
             </p>
           </section>
 
@@ -137,7 +137,7 @@ export default function PrivacyPage() {
               10. Changes to this policy
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              We may update this policy from time to time. The "Last updated" date at the top reflects the latest version. Material changes will be highlighted on this page.
+              We may update this policy from time to time. The &ldquo;Last updated&rdquo; date at the top reflects the latest version. Material changes will be highlighted on this page.
             </p>
           </section>
 
@@ -155,7 +155,7 @@ export default function PrivacyPage() {
 
           <section className="mb-8 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
             <p className="text-slate-600 dark:text-slate-400 font-medium">
-              <strong>Short version:</strong> we collect call data and contact info to run SenseFlow. We don't sell your data or use analytics cookies. Email us anytime to see or delete what we have.
+              <strong>Short version:</strong> we collect call data and contact info to run SenseFlow. We don&apos;t sell your data or use analytics cookies. Email us anytime to see or delete what we have.
             </p>
           </section>
 

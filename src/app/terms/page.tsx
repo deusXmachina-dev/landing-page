@@ -1,4 +1,4 @@
-import { COMPANY_NAME, CONTACT_EMAIL, CURRENT_YEAR } from "@/lib/constants";
+import { COMPANY_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export default function TermsPage() {
   return (
@@ -14,7 +14,7 @@ export default function TermsPage() {
           </p>
 
           <p className="text-slate-600 dark:text-slate-400 mb-8">
-            These Terms of Use (the <strong>"Terms"</strong>) are a legal agreement between you (<strong>"you"</strong> or <strong>"User"</strong>) and <strong>SenseFlow, Inc.</strong>, a Delaware corporation (<strong>"SenseFlow,"</strong> <strong>"we,"</strong> <strong>"our,"</strong> or <strong>"us"</strong>). They govern your access to and use of our websites (including <strong>senseflow.io</strong> and <strong>app.senseflow.io</strong>) and any related products, software, or services we provide (collectively, the <strong>"Services"</strong>).
+            These Terms of Use (the <strong>&ldquo;Terms&rdquo;</strong>) are a legal agreement between you (<strong>&ldquo;you&rdquo;</strong> or <strong>&ldquo;User&rdquo;</strong>) and <strong>SenseFlow, Inc.</strong>, a Delaware corporation (<strong>&ldquo;SenseFlow,&rdquo;</strong> <strong>&ldquo;we,&rdquo;</strong> <strong>&ldquo;our,&rdquo;</strong> or <strong>&ldquo;us&rdquo;</strong>). They govern your access to and use of our websites (including <strong>senseflow.io</strong> and <strong>app.senseflow.io</strong>) and any related products, software, or services we provide (collectively, the <strong>&ldquo;Services&rdquo;</strong>).
           </p>
 
           <p className="text-slate-600 dark:text-slate-400 mb-8">
@@ -36,7 +36,7 @@ export default function TermsPage() {
               2. What SenseFlow Provides
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              SenseFlow offers communication/calling tools and related features (including call history, recordings, and transcripts). We may launch or retire features at any time. Some parts of the Services may be offered as beta or pre-release; those parts are provided "as is" and may change without notice.
+              SenseFlow offers communication/calling tools and related features (including call history, recordings, and transcripts). We may launch or retire features at any time. Some parts of the Services may be offered as beta or pre-release; those parts are provided &ldquo;as is&rdquo; and may change without notice.
             </p>
           </section>
 
@@ -49,7 +49,7 @@ export default function TermsPage() {
               <li><strong>Billing & Authorization:</strong> You authorize us (and our payment processor) to charge all incurred fees to your provided payment method.</li>
               <li><strong>No refunds:</strong> All payments are non‑refundable and non‑cancelable, except where required by law.</li>
               <li><strong>Price changes:</strong> We may change prices with reasonable notice. New prices apply to future usage/billing periods.</li>
-              <li><strong>Taxes:</strong> Fees are exclusive of taxes; you're responsible for any applicable taxes, duties, or government charges.</li>
+              <li><strong>Taxes:</strong> Fees are exclusive of taxes; you&apos;re responsible for any applicable taxes, duties, or government charges.</li>
             </ul>
           </section>
 
@@ -76,7 +76,7 @@ export default function TermsPage() {
               4. User Content & License
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              <strong>"User Content"</strong> means any data, audio, text, or other material you submit, upload, record, or otherwise provide through the Services (including call recordings and transcripts).
+              <strong>&ldquo;User Content&rdquo;</strong> means any data, audio, text, or other material you submit, upload, record, or otherwise provide through the Services (including call recordings and transcripts).
             </p>
             <ul className="text-slate-600 dark:text-slate-400 mb-4 list-disc pl-6">
               <li>You retain ownership of your User Content.</li>
@@ -123,7 +123,7 @@ export default function TermsPage() {
               8. Beta / Experimental Features
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              From time to time, we may offer features marked as alpha, beta, preview, or otherwise pre-release. These are provided for evaluation purposes only, may be changed or discontinued at any time, and are provided "as is" without warranties.
+              From time to time, we may offer features marked as alpha, beta, preview, or otherwise pre-release. These are provided for evaluation purposes only, may be changed or discontinued at any time, and are provided &ldquo;as is&rdquo; without warranties.
             </p>
           </section>
 
@@ -132,7 +132,7 @@ export default function TermsPage() {
               9. Disclaimers
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE." TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT GUARANTEE THE SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.
+              THE SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE.&rdquo; TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT GUARANTEE THE SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.
             </p>
           </section>
 
@@ -156,7 +156,7 @@ export default function TermsPage() {
               11. Indemnification
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              You will indemnify and hold harmless SenseFlow and our officers, directors, employees, and agents from any claim, demand, losses, or damages (including reasonable attorneys' fees) arising out of or related to: (a) your use of the Services; (b) your User Content; or (c) your violation of these Terms or applicable law.
+              You will indemnify and hold harmless SenseFlow and our officers, directors, employees, and agents from any claim, demand, losses, or damages (including reasonable attorneys&apos; fees) arising out of or related to: (a) your use of the Services; (b) your User Content; or (c) your violation of these Terms or applicable law.
             </p>
           </section>
 
@@ -174,7 +174,7 @@ export default function TermsPage() {
               13. Changes to the Terms
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              We may update these Terms occasionally. When we do, we will change the "Last updated" date above. If changes are material, we will take reasonable steps to notify you. Continued use after changes means you accept the updated Terms.
+              We may update these Terms occasionally. When we do, we will change the &ldquo;Last updated&rdquo; date above. If changes are material, we will take reasonable steps to notify you. Continued use after changes means you accept the updated Terms.
             </p>
           </section>
 
@@ -228,7 +228,7 @@ export default function TermsPage() {
 
           <div className="mt-8 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
             <p className="text-sm text-slate-600 dark:text-slate-400 italic">
-              <strong>Short version:</strong> Use SenseFlow lawfully, don't break stuff, and make sure you have consent to record calls. We provide the service "as is" and limit our liability. If there's a dispute, Delaware law applies. Reach out if anything's unclear.
+              <strong>Short version:</strong> Use SenseFlow lawfully, don&apos;t break stuff, and make sure you have consent to record calls. We provide the service &ldquo;as is&rdquo; and limit our liability. If there&apos;s a dispute, Delaware law applies. Reach out if anything&apos;s unclear.
             </p>
           </div>
 
