@@ -11,7 +11,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Logo href="/" className="mb-4" />
             <p className="text-slate-600 dark:text-slate-400 max-w-md">
-              The world's simplest API for outbound calls. Integrate intelligent voice interactions into your n8n/Make workflows in minutes.
+              The world&apos;s simplest API for outbound calls. Integrate intelligent voice interactions into your n8n/Make workflows in minutes.
             </p>
           </div>
 

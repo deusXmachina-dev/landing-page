@@ -15,7 +15,7 @@ export function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 dark:text-slate-100 mb-6 leading-tight">
-            World's{" "}
+            World&apos;s{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
               Simplest API
             </span>{" "}
