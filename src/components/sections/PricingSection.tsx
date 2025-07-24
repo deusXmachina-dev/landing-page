@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
+import { CTAButton } from "@/components/ui/cta-button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Gift } from "lucide-react";
-import { PRICE_PER_MINUTE, FREE_CREDITS_AMOUNT, FREE_CREDITS_MINUTES, CONTACT_EMAIL, SIGNUP_URL } from "@/lib/constants";
+import { PRICE_PER_MINUTE, FREE_CREDITS_AMOUNT, FREE_CREDITS_MINUTES, CONTACT_EMAIL } from "@/lib/constants";
 
 export function PricingSection() {
   const features = [
@@ -62,11 +62,9 @@ export function PricingSection() {
                 </div>
 
                 {/* CTA Button */}
-                <Button size="lg" className="w-full" asChild>
-                  <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">
-                    Start with Free Credits
-                  </a>
-                </Button>
+                <CTAButton className="w-full">
+                  Start with Free Credits
+                </CTAButton>
 
                 {/* Additional Info */}
                 <div className="text-center text-sm text-slate-500 dark:text-slate-400">

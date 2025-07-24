@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { CTAButton } from "@/components/ui/cta-button";
 import { StepCard } from "@/components/ui/step-card";
 import { Terminal, Gift, Key } from "lucide-react";
 import { NPM_PACKAGE_NAME } from "@/lib/constants";
@@ -74,9 +74,9 @@ export function QuickStartSection() {
               <p className="text-slate-600 dark:text-slate-400 mb-6">
                 No credit card required • Get your API key instantly
               </p>
-              <Button size="lg" className="px-8 py-3">
+              <CTAButton size="lg" className="px-8 py-3">
                 Sign Up & Get Credits
-              </Button>
+              </CTAButton>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { CTAButton } from "@/components/ui/cta-button";
 import { Logo } from "@/components/ui/logo";
-import { LOGIN_URL, SIGNUP_URL, DOCS_URL } from "@/lib/constants";
+import { LOGIN_URL, DOCS_URL } from "@/lib/constants";
 import Link from "next/link";
 
 export function Navbar() {
@@ -49,9 +50,9 @@ export function Navbar() {
           <Button variant="ghost" asChild>
             <a href={LOGIN_URL} target="_blank" rel="noopener noreferrer">Sign In</a>
           </Button>
-          <Button asChild>
-            <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">Get Started</a>
-          </Button>
+          <CTAButton size="default" className="w-auto">
+            Get Started
+          </CTAButton>
         </div>
       </div>
     </header>

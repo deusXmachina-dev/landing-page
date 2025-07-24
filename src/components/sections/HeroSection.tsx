@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { CTAButton } from "@/components/ui/cta-button";
 import { Bot } from "lucide-react";
-import { DOCS_URL, SIGNUP_URL } from "@/lib/constants";
+import { DOCS_URL } from "@/lib/constants";
 
 export function HeroSection() {
   return (
@@ -30,9 +31,9 @@ export function HeroSection() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="px-8 py-6 text-lg font-medium" asChild>
-              <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">Get Started - Free Credits</a>
-            </Button>
+            <CTAButton size="lg" className="px-8 py-6 text-lg font-medium">
+              Get Started - Free Credits
+            </CTAButton>
             <Button variant="outline" size="lg" className="px-8 py-6 text-lg font-medium" asChild>
               <a href={DOCS_URL} target="_blank" rel="noopener noreferrer">View Documentation</a>
             </Button>
