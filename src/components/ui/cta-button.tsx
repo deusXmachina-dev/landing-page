@@ -4,6 +4,7 @@ import { SIGNUP_URL } from "@/lib/constants";
 interface CTAButtonProps {
   children: React.ReactNode;
   className?: string;
+  href?: string;
   size?: "default" | "sm" | "lg" | "icon";
   variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
 }
@@ -11,8 +12,9 @@ interface CTAButtonProps {
 export function CTAButton({ 
   children, 
   className = "", 
+  href = SIGNUP_URL,
   size = "lg",
-  variant = "default"
+  variant = "default",
 }: CTAButtonProps) {
   return (
     <Button 
@@ -21,7 +23,7 @@ export function CTAButton({
       className={`inline-flex items-center justify-center ${className}`} 
       asChild
     >
-      <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">
+      <a href={href} target="_blank" rel="noopener noreferrer">
         {children}
       </a>
     </Button>

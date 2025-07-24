@@ -47,9 +47,9 @@ export function Navbar() {
 
         {/* Sign In Button */}
         <div className="flex items-center space-x-4">
-          <Button variant="ghost" asChild>
-            <a href={LOGIN_URL} target="_blank" rel="noopener noreferrer">Sign In</a>
-          </Button>
+          <CTAButton size="default" className="w-auto" variant="outline" href={LOGIN_URL}>
+            Log In
+          </CTAButton>
           <CTAButton size="default" className="w-auto">
             Get Started
           </CTAButton>

@@ -27,7 +27,7 @@ The script is designed to be safe and only replaces entities in JSX text content
 ### Run the script manually
 
 ```bash
-npm run fix-entities
+bun run fix-entities
 ```
 
 ### Integration options
