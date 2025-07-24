@@ -1,0 +1,49 @@
+# SenseFlow - Voice API for Workflow Automation
+
+## About
+SenseFlow is the world's simplest API for voice calls, designed specifically for low-code/no-code workflow automation platforms like n8n and Make. We enable developers and automation enthusiasts to integrate intelligent voice interactions into their workflows in under 60 seconds.
+
+## Product
+- **Service**: Voice API for outbound calls
+- **Target Users**: Low-code/no-code developers, workflow automation users
+- **Primary Platforms**: n8n, Make (formerly Integromat)
+- **Setup Time**: Under 60 seconds from signup to first call
+
+## Key Features
+- Outbound voice calls
+- AI-powered intelligent voice conversations
+- Simple n8n/Make integration
+- Real-time call handling
+- API key management
+- Usage analytics
+- Lightning-fast setup
+
+## Pricing
+- **Model**: Pay-per-use (no monthly fees)
+- **Rate**: $0.25 per minute
+- **Free Credits**: $10 free credits for new users
+- **Free Minutes**: Up to 40 minutes of calls to get started
+
+## Technical Details
+- **NPM Package**: @senseflow/n8n-node
+- **API Documentation**: https://app.senseflow.io/api/docs
+- **App URL**: https://app.senseflow.io
+- **Integration**: Simple API calls within workflow nodes
+
+## Company
+- **Name**: SenseFlow
+- **Contact**: call-me-maybe@senseflow.io
+- **GitHub**: https://github.com/senseflow-io
+- **Focus**: Making voice integration accessible to workflow automation users
+
+## Getting Started
+1. Sign up at https://app.senseflow.io/signup
+2. Get $10 free credits instantly
+3. Install the n8n node: npm install @senseflow/n8n-node
+4. Make your first call with a simple API call: { call: +1234567890 }
+
+## Value Proposition
+Transform your workflows with voice capabilities in minutes, not days. No complex configuration, no monthly commitments - just simple, powerful voice integration for your automation needs.
+
+## Last Updated
+July 24, 2025
