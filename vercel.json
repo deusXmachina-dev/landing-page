@@ -1,5 +1,4 @@
 {
-  "packageManager": "bun@1.0.0",
   "headers": [
     {
       "source": "/(.*)",
