@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { StepCard } from "@/components/ui/step-card";
 import { Terminal, Gift, Key } from "lucide-react";
+import { NPM_PACKAGE_NAME } from "@/lib/constants";
 
 export function QuickStartSection() {
   const steps = [
@@ -19,7 +20,7 @@ export function QuickStartSection() {
       stepNumber: 2,
       title: "Install n8n Node",
       description: "Add SenseFlow to your n8n instance",
-      code: "npm install @senseflow/n8n-node",
+      code: `npm install ${NPM_PACKAGE_NAME}`,
       codeLabel: "Terminal",
       codeColor: "text-slate-300",
       stepColor: "bg-blue-600",

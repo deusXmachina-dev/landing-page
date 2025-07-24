@@ -17,4 +17,7 @@ export const FREE_CREDITS_MINUTES = Math.floor(FREE_CREDITS_AMOUNT / PRICE_PER_M
 
 // Company
 export const COMPANY_NAME = "SenseFlow";
-export const CURRENT_YEAR = new Date().getFullYear(); 
+export const CURRENT_YEAR = new Date().getFullYear();
+
+// Package
+export const NPM_PACKAGE_NAME = "@senseflow/n8n-node"; 
