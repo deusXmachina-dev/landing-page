@@ -13,17 +13,17 @@ export function Navbar() {
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link 
-            href="#features" 
-            className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:scale-105 relative group"
-          >
-            Features
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-600 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link 
             href="#quick-start" 
             className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:scale-105 relative group"
           >
             Quick Start
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-600 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+          <Link 
+            href="#features" 
+            className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:scale-105 relative group"
+          >
+            Features
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-600 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link 
