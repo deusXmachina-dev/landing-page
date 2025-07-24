@@ -64,7 +64,7 @@ export default function TermsPage() {
               <li>Use the Services only for lawful purposes and in accordance with these Terms.</li>
               <li>Obtain and maintain all required consents and notices for recording or transcribing calls, as required by applicable laws (e.g., one-party or all-party consent rules).</li>
               <li>Not misuse, interfere with, reverse engineer, or attempt to gain unauthorized access to the Services or related systems.</li>
-              <li>Not upload or transmit malicious code or infringe others' rights.</li>
+              <li>Not upload or transmit malicious code or infringe others&apos; rights.</li>
             </ul>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
               We may suspend or terminate your access if you violate these Terms.
