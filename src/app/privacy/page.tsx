@@ -1,4 +1,5 @@
 import { COMPANY_NAME, CONTACT_EMAIL, CURRENT_YEAR } from "@/lib/constants";
+import { SummaryBox } from "@/components/ui/summary-box";
 
 export default function PrivacyPage() {
   return (
@@ -119,7 +120,7 @@ export default function PrivacyPage() {
               8. Children
             </h2>
             <p className="text-slate-600 dark:text-slate-400 mb-4">
-              Our Services are not directed to individuals under 16. If you believe a child provided us data, contact us and we&apos;ll delete it.
+              Our Services are not directed to individuals under 18. If you believe a child provided us data, contact us and we&apos;ll delete it.
             </p>
           </section>
 
@@ -153,11 +154,9 @@ export default function PrivacyPage() {
             </div>
           </section>
 
-          <section className="mb-8 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
-            <p className="text-slate-600 dark:text-slate-400 font-medium">
-              <strong>Short version:</strong> we collect call data and contact info to run SenseFlow. We don&apos;t sell your data or use analytics cookies. Email us anytime to see or delete what we have.
-            </p>
-          </section>
+          <SummaryBox>
+            <strong>Short version:</strong> We collect call data and contact info to run SenseFlow. We don&apos;t sell your data or use analytics cookies. Email us anytime to see or delete what we have.
+          </SummaryBox>
 
           <footer className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
             <p className="text-sm text-slate-500 dark:text-slate-400">

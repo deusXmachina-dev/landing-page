@@ -9,33 +9,37 @@ By accessing or using the Services, you agree to be bound by these Terms. If you
 ---
 
 ## 1. Eligibility & Accounts
-- You must be at least 16 years old (or the age of majority in your jurisdiction, if higher) to use the Services.  
+- You must be at least 18 years old (or the age of majority in your jurisdiction, if higher) to use the Services.  
 - If you create an account, you must provide accurate information and keep your credentials confidential. You are responsible for all activity under your account.
 
 ---
 
 ## 2. What SenseFlow Provides
-SenseFlow offers communication/calling tools and related features (including call history, recordings, and transcripts). We may launch or retire features at any time. Some parts of the Services may be offered as beta or pre-release; those parts are provided “as is” and may change without notice.
+SenseFlow offers cloud based communication/calling tools and related features (including call history, recordings, and transcripts). We may launch or retire features at any time. We may update, enhance, or discontinue features from time to time.
 
 ---
 
-## Fees & Payment
-- **Model:** Pay‑as‑you‑go. You are charged based on actual usage as described in the applicable pricing page or order form.  
-- **Billing & Authorization:** You authorize us (and our payment processor) to charge all incurred fees to your provided payment method.  
-- **No refunds:** All payments are non‑refundable and non‑cancelable, except where required by law.  
-- **Price changes:** We may change prices with reasonable notice. New prices apply to future usage/billing periods.  
-- **Taxes:** Fees are exclusive of taxes; you’re responsible for any applicable taxes, duties, or government charges.
+## 3. Acceptance of Terms. 
+By using the Service, you agree to be bound by these Terms. If you do not agree to all of the Terms, you may not access or use the Service. These Terms expressly supersede and replace any prior agreements or understandings, written or oral, relating to the Service.
 
 ---
 
-## 3. Your Responsibilities
-You agree to:  
-- Use the Services only for lawful purposes and in accordance with these Terms.  
-- Obtain and maintain all required consents and notices for recording or transcribing calls, as required by applicable laws (e.g., one-party or all-party consent rules).  
-- Not misuse, interfere with, reverse engineer, or attempt to gain unauthorized access to the Services or related systems.  
-- Not upload or transmit malicious code or infringe others’ rights.
+## 3. Fees & Payment
+If your plan is subject to fees, you agree to pay all amounts due, plus applicable taxes, in accordance with the pricing and payment terms presented to you at the time you order the Services.
 
-We may suspend or terminate your access if you violate these Terms.
+---
+
+## 6. Prohibited Uses
+You agree not to use the Service for any unlawful purpose or in any way that violates local, state, national, or international laws. You are solely responsible for ensuring that your use of the Service complies with all applicable laws and regulations. Prohibited uses include but are not limited to:
+
+- Criminal activities
+- Malicious, fraudulent, or illegal purposes
+- Infringement of Bland AI or third party intellectual property rights
+- Defamatory, harassing, abusive, or threatening use
+- Distribution of unauthorized spam
+- Transmission of viruses, malware, or other destructive code
+- Gathering or transmitting personal information without consent
+- Interference with service functionality or security features
 
 ---
 
@@ -87,12 +91,24 @@ Some jurisdictions do not allow limitations of liability; in those cases, the ab
 ---
 
 ## 11. Indemnification
-You will indemnify and hold harmless SenseFlow and our officers, directors, employees, and agents from any claim, demand, losses, or damages (including reasonable attorneys’ fees) arising out of or related to: (a) your use of the Services; (b) your User Content; or (c) your violation of these Terms or applicable law.
+You will indemnify and hold harmless SenseFlow and its affiliates from and against any third‑party claims arising from your use of the Services or violation of these Terms.
 
 ---
 
 ## 12. Termination
-You may stop using the Services at any time. We may suspend or terminate your access if we believe you have violated these Terms or if we stop providing the Services. Sections that by their nature should survive termination (e.g., ownership, disclaimers, limitations of liability, indemnity) will survive.
+You may discontinue your use of the Services at any time.
+
+We reserve the right, at our sole discretion, to suspend or terminate the Services or your Account (in whole or in part) at any time, with or without notice, for any reason or no reason, including but not limited to:(a) your actual or suspected violation of these Terms or any other policy;(b) unlawful, fraudulent, or abusive use of the Services;(c) compliance with a law‑enforcement request, court order, or applicable law;(d) our determination that providing the Services to you is no longer commercially viable;(e) an extended period of inactivity on your Account; or(f) our decision to discontinue the Services generally.
+
+Upon termination or suspension:
+
+your right to access or use the Services will immediately cease;
+
+we may deactivate or delete your Account and all related information and files; and
+
+we will have no liability to you or any third party for any termination of your access to the Services or deletion of your Account or any User Content.
+
+Sections that by their nature should survive termination (including, without limitation, ownership provisions, warranty disclaimers, indemnities, and limitations of liability) shall survive termination.
 
 ---
 
@@ -114,10 +130,7 @@ You must comply with all applicable export control and sanctions laws. You repre
 ---
 
 ## 16. Miscellaneous
-- These Terms constitute the entire agreement between you and SenseFlow regarding the Services.  
-- If a court finds any provision unenforceable, the rest remain in effect.  
-- Our failure to enforce a provision is not a waiver of our right to do so later.  
-- You may not assign these Terms without our prior written consent. We may assign them in connection with a merger, acquisition, or sale of assets.
+If any provision is unenforceable, it will be severed and the remaining provisions will remain in full force. These Terms do not create any agency, partnership, or joint venture. You may not assign these Terms without our consent; we may assign them without restriction.
 
 ---
 

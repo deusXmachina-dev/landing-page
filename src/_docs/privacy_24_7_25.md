@@ -68,7 +68,7 @@ To exercise rights, email us at **call-me-maybe@senseflow.io**. We may need to v
 ---
 
 ## 8. Children
-Our Services are not directed to individuals under 16. If you believe a child provided us data, contact us and we’ll delete it.
+Our Services are not directed to individuals under 18. If you believe a child provided us data, contact us and we’ll delete it.
 
 ---
 
@@ -90,4 +90,4 @@ Email: **call-me-maybe@senseflow.io**
 
 ---
 
-_Short version: we collect call data and contact info to run SenseFlow. We don’t sell your data or use analytics cookies. Email us anytime to see or delete what we have._
+_Short version: We collect call data and contact info to run SenseFlow. We don’t sell your data or use analytics cookies. Email us anytime to see or delete what we have._
