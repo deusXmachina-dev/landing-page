@@ -20,4 +20,4 @@ export const COMPANY_NAME = "SenseFlow";
 export const CURRENT_YEAR = new Date().getFullYear();
 
 // Package
-export const NPM_PACKAGE_NAME = "@senseflow/n8n-node"; 
+export const NPM_PACKAGE_NAME = "@senseflow-io/n8n-nodes-senseflow";
