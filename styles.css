@@ -1,0 +1,87 @@
+:root {
+  --bg: #ffffff; /* clean and light */
+  --fg: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  min-height: 100svh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding: 4rem 1.5rem;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: clamp(2rem, 4vw + 1rem, 3.25rem);
+  letter-spacing: 0.02em;
+}
+
+.tagline {
+  margin: 0;
+  font-size: clamp(1rem, 1.2vw + 0.8rem, 1.25rem);
+  font-weight: 500;
+}
+
+.mission {
+  margin: 0.25rem auto 0;
+  max-width: 60ch;
+  opacity: 0.9;
+}
+
+/* Simple, clean styles for the audience section */
+.audience-cta {
+  margin-top: 1rem;
+}
+
+.audience-cta h2 {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 1.125rem;
+}
+
+.audience-cta ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.audience-cta li {
+  margin: 0;
+}
+
+.audience-cta h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.audience-cta p {
+  margin: 0.25rem 0 0;
+}
+
+.audience-cta a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
