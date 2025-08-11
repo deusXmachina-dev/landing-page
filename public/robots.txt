@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Block all web scraping
+# This robots.txt file prevents search engines and other bots from crawling this website
