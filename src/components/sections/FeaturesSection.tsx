@@ -39,13 +39,11 @@ export function FeaturesSection() {
             {objections.map((item, index) => (
               <Card key={index} className="border-0 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader className="pb-4">
-                  <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center text-green-600 dark:text-green-400 mb-4">
+                  <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-400 mb-4">
                     {item.icon}
                   </div>
                   <CardTitle className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-3">
-                    <span className="text-red-600 dark:text-red-400 font-medium">"</span>
                     {item.objection}
-                    <span className="text-red-600 dark:text-red-400 font-medium">"</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -59,8 +57,8 @@ export function FeaturesSection() {
 
           {/* Bottom CTA */}
           <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950 dark:to-blue-950 rounded-2xl p-8 border border-green-200 dark:border-green-800">
-              <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center text-green-600 dark:text-green-400 mx-auto mb-4">
+            <div className="bg-white dark:bg-slate-900 rounded-lg p-8 border border-slate-200 dark:border-slate-700">
+              <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-400 mx-auto mb-4">
                 <MessageCircle className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">
@@ -75,4 +73,4 @@ export function FeaturesSection() {
       </div>
     </section>
   );
-} 
+}

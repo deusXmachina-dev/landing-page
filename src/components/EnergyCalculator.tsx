@@ -97,7 +97,7 @@ export default function EnergyCalculator({ className = "" }: EnergyCalculatorPro
   }, [energyCostText, smallRobotsText, mediumRobotsText, largeRobotsText, xlargeRobotsText, hoursText, lifetimeText]);
 
   return (
-    <div className={`min-h-dvh p-4 md:p-6 bg-gradient-to-br from-black/[.02] to-black/[.06] dark:from-white/[.02] dark:to-white/[.06] ${className}`}>
+    <div className={`min-h-dvh p-4 md:p-6 bg-slate-50 dark:bg-slate-800 ${className}`}>
       <div className="mx-auto max-w-7xl">
         <Suspense fallback={null}>
           <UrlSync
@@ -384,17 +384,17 @@ function ScenarioRow({
   assumed?: boolean;
 }) {
   return (
-    <tr className={`border-b border-black/5 dark:border-white/5 transition-colors ${highlight ? "bg-green-50 dark:bg-green-950/20" : "hover:bg-black/[.02] dark:hover:bg-white/[.02]"}`}>
+    <tr className={`border-b border-black/5 dark:border-white/5 transition-colors ${highlight ? "bg-slate-100 dark:bg-slate-700" : "hover:bg-black/[.02] dark:hover:bg-white/[.02]"}`}>
       <td className={`py-3 md:py-4 pl-2 md:pl-3 pr-2 md:pr-3 ${assumed ? "font-bold" : ""}`}>
         <div className="flex items-center gap-2">
-          <span className={`text-sm md:text-base whitespace-nowrap ${highlight ? "text-green-700 dark:text-green-400" : ""}`}>{improvement}</span>
+          <span className={`text-sm md:text-base whitespace-nowrap`}>{improvement}</span>
           {assumed ? (
-            <span className="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700 px-1.5 md:px-2 py-0.5 text-[9px] md:text-[10px] font-semibold uppercase tracking-wide text-green-700 dark:text-green-400">Typical</span>
+            <span className="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-600 border border-slate-300 dark:border-slate-500 px-1.5 md:px-2 py-0.5 text-[9px] md:text-[10px] font-semibold uppercase tracking-wide text-slate-700 dark:text-slate-300">Typical</span>
           ) : null}
         </div>
       </td>
-      <td className={`py-3 md:py-4 pr-2 md:pr-3 text-sm md:text-base tabular-nums ${assumed ? "font-bold" : ""} ${highlight ? "text-green-700 dark:text-green-400" : ""}`}>{co2Savings}</td>
-      <td className={`py-3 md:py-4 pr-2 md:pr-3 text-right text-sm md:text-base tabular-nums ${assumed ? "font-bold" : ""} ${highlight ? "text-green-700 dark:text-green-400" : ""}`}>{lifetimeSavings}</td>
+      <td className={`py-3 md:py-4 pr-2 md:pr-3 text-sm md:text-base tabular-nums ${assumed ? "font-bold" : ""}`}>{co2Savings}</td>
+      <td className={`py-3 md:py-4 pr-2 md:pr-3 text-right text-sm md:text-base tabular-nums ${assumed ? "font-bold" : ""}`}>{lifetimeSavings}</td>
     </tr>
   );
 }

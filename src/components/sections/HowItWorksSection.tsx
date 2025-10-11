@@ -48,11 +48,11 @@ export function HowItWorksSection() {
             {steps.map((item) => (
               <Card key={item.step} className="border-0 bg-slate-50 dark:bg-slate-800 shadow-sm hover:shadow-md transition-shadow relative">
                 {/* Step Number Badge */}
-                <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-green-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                <div className="absolute -top-4 -left-4 w-12 h-12 bg-slate-900 dark:bg-slate-100 rounded-full flex items-center justify-center text-white dark:text-slate-900 font-bold text-xl shadow-lg">
                   {item.step}
                 </div>
                 <CardHeader className="pt-8 pb-4">
-                  <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center text-green-600 dark:text-green-400 mb-4">
+                  <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-400 mb-4">
                     {item.icon}
                   </div>
                   <CardTitle className="text-lg font-semibold text-slate-900 dark:text-slate-100">
@@ -69,7 +69,7 @@ export function HowItWorksSection() {
           </div>
 
           {/* Bottom Info Box */}
-          <div className="mt-16 bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 border border-slate-200 dark:border-slate-600">
+          <div className="mt-16 bg-slate-50 dark:bg-slate-800 rounded-lg p-8 border border-slate-200 dark:border-slate-700">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">
@@ -77,11 +77,11 @@ export function HowItWorksSection() {
                 </h3>
                 <ul className="space-y-2 text-slate-600 dark:text-slate-400">
                   <li className="flex items-start">
-                    <span className="text-green-600 dark:text-green-400 mr-2">•</span>
+                    <span className="text-slate-600 dark:text-slate-400 mr-2">•</span>
                     Your target takt time
                   </li>
                   <li className="flex items-start">
-                    <span className="text-green-600 dark:text-green-400 mr-2">•</span>
+                    <span className="text-slate-600 dark:text-slate-400 mr-2">•</span>
                     Your existing robot program
                   </li>
                 </ul>
@@ -92,11 +92,11 @@ export function HowItWorksSection() {
                 </h3>
                 <ul className="space-y-2 text-slate-600 dark:text-slate-400">
                   <li className="flex items-start">
-                    <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                    <span className="text-slate-600 dark:text-slate-400 mr-2">•</span>
                     Optimised parameters that cut energy use
                   </li>
                   <li className="flex items-start">
-                    <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                    <span className="text-slate-600 dark:text-slate-400 mr-2">•</span>
                     Without slowing production
                   </li>
                 </ul>
@@ -108,4 +108,3 @@ export function HowItWorksSection() {
     </section>
   );
 }
-
