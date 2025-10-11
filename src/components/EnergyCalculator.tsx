@@ -2,6 +2,7 @@
 
 import { Suspense, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { ROBOT_POWER_CONSUMPTION, CO2_EMISSIONS_FACTOR, ENERGY_SAVINGS_SCENARIOS } from "@/lib/constants";
 
 const currency = new Intl.NumberFormat("cs-CZ", {
   style: "currency",
@@ -47,20 +48,19 @@ export default function EnergyCalculator({ className = "" }: EnergyCalculatorPro
     const operatingHoursPerYear = isNaN(parsedHours) ? 0 : parsedHours;
     const lifetimeYears = isNaN(parsedLifetime) ? 0 : parsedLifetime;
 
-    // Assumed power consumption per robot type (kW)
+    // Calculate total power consumption using constants
     const totalConsumptionKw = 
-      smallRobots * 1.2 + 
-      mediumRobots * 1.5 + 
-      largeRobots * 6 + 
-      xlargeRobots * 10;
+      smallRobots * ROBOT_POWER_CONSUMPTION.SMALL + 
+      mediumRobots * ROBOT_POWER_CONSUMPTION.MEDIUM + 
+      largeRobots * ROBOT_POWER_CONSUMPTION.LARGE + 
+      xlargeRobots * ROBOT_POWER_CONSUMPTION.XLARGE;
 
     const baselineKwhPerYear = totalConsumptionKw * operatingHoursPerYear;
     const baselineCost = baselineKwhPerYear * energyCostPerKwh;
     const baselineMwhPerYear = baselineKwhPerYear / 1000;
     const baselineLifetimeCost = baselineCost * lifetimeYears;
 
-    const improvements = [15, 20, 25];
-    const scenarios = improvements.map((pct) => {
+    const scenarios = ENERGY_SAVINGS_SCENARIOS.map((pct) => {
       const factor = Math.max(0, 1 - pct / 100);
       const newKwhPerYear = baselineKwhPerYear * factor;
       const newCost = baselineCost * factor;
@@ -68,7 +68,7 @@ export default function EnergyCalculator({ className = "" }: EnergyCalculatorPro
       const lifetimeSavings = annualSavings * lifetimeYears;
       const energySavingsKwh = baselineKwhPerYear - newKwhPerYear;
       const totalEnergySavingsMwh = (energySavingsKwh / 1000) * lifetimeYears;
-      const co2SavingsTons = totalEnergySavingsMwh * 0.4; // tCO₂e/MWh
+      const co2SavingsTons = totalEnergySavingsMwh * CO2_EMISSIONS_FACTOR;
       const savingsPercent = baselineCost > 0 ? (annualSavings / baselineCost) * 100 : 0;
       return {
         pct,
