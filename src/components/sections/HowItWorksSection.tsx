@@ -1,31 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Upload, Cpu, Download, CheckCircle } from "lucide-react";
+import { Settings, TrendingUp, Wrench } from "lucide-react";
 
 export function HowItWorksSection() {
-  const steps = [
+  const objections = [
     {
-      step: 1,
-      icon: <Upload className="w-6 h-6" />,
-      title: "Share Your Setup",
-      description: "Provide your target takt time and existing robot program. We work with digital twins or direct robot configurations."
+      icon: <Settings className="w-6 h-6" />,
+      objection: "Robot vendors already handle energy efficiency.",
+      response: "Vendors optimise the hardware and motion. We optimise the process. Our tools don't replace theirs – they unlock what's still left on the table."
     },
     {
-      step: 2,
-      icon: <Cpu className="w-6 h-6" />,
-      title: "AI-Powered Analysis",
-      description: "Our optimization tool analyzes your process, identifying opportunities to reduce idle time without impacting throughput."
+      icon: <TrendingUp className="w-6 h-6" />,
+      objection: "The benefits are marginal.",
+      response: "We disagree. Saving €1,000s per robot isn't marginal – it's a start. Add lower maintenance costs and avoided CO₂ emissions, and the value multiplies fast."
     },
     {
-      step: 3,
-      icon: <Download className="w-6 h-6" />,
-      title: "Get Optimized Parameters",
-      description: "Receive tuned parameters that cut energy use by up to 30% while maintaining your production targets."
-    },
-    {
-      step: 4,
-      icon: <CheckCircle className="w-6 h-6" />,
-      title: "Deploy & Monitor",
-      description: "Implementation fits into maintenance windows. Digital twins? We integrate seamlessly. Track savings in real-time."
+      icon: <Wrench className="w-6 h-6" />,
+      objection: "It is hard to deploy.",
+      response: "Got digital twins? Easy – we plug into your simulations. No digital twin? Deployment fits neatly into maintenance windows."
     }
   ];
 
@@ -39,68 +30,78 @@ export function HowItWorksSection() {
               How It Works
             </h2>
             <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              We've built an optimisation tool that takes the guesswork out of robot tuning
+              Simple input, powerful output
             </p>
           </div>
 
-          {/* Steps Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {steps.map((item) => (
-              <Card key={item.step} className="border-0 bg-slate-50 dark:bg-slate-800 shadow-sm hover:shadow-md transition-shadow relative">
-                {/* Step Number Badge */}
-                <div className="absolute -top-4 -left-4 w-12 h-12 bg-slate-900 dark:bg-slate-100 rounded-full flex items-center justify-center text-white dark:text-slate-900 font-bold text-xl shadow-lg">
-                  {item.step}
+          {/* Input/Output Box */}
+          <div className="max-w-4xl mx-auto mb-20">
+            <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-8 md:p-12 border border-slate-200 dark:border-slate-700">
+              <div className="grid md:grid-cols-2 gap-12 md:gap-16">
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">
+                    You give us:
+                  </h3>
+                  <ul className="space-y-3 text-slate-600 dark:text-slate-400">
+                    <li className="flex items-center text-lg">
+                      <span className="text-slate-900 dark:text-slate-100 mr-3">→</span>
+                      Target takt time
+                    </li>
+                    <li className="flex items-center text-lg">
+                      <span className="text-slate-900 dark:text-slate-100 mr-3">→</span>
+                      Robot program
+                    </li>
+                  </ul>
                 </div>
-                <CardHeader className="pt-8 pb-4">
-                  <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-lg flex items-center justify-center text-slate-600 dark:text-slate-400 mb-4">
-                    {item.icon}
-                  </div>
-                  <CardTitle className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-                    {item.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
-                    {item.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">
+                    We give you:
+                  </h3>
+                  <ul className="space-y-3 text-slate-600 dark:text-slate-400">
+                    <li className="flex items-center text-lg">
+                      <span className="text-slate-900 dark:text-slate-100 mr-3">→</span>
+                      Optimised parameters
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Bottom Info Box */}
-          <div className="mt-16 bg-slate-50 dark:bg-slate-800 rounded-lg p-8 border border-slate-200 dark:border-slate-700">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-                  You give it:
-                </h3>
-                <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-                  <li className="flex items-start">
-                    <span className="text-slate-600 dark:text-slate-400 mr-2">•</span>
-                    Your target takt time
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-slate-600 dark:text-slate-400 mr-2">•</span>
-                    Your existing robot program
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-                  It gives you:
-                </h3>
-                <ul className="space-y-2 text-slate-600 dark:text-slate-400">
-                  <li className="flex items-start">
-                    <span className="text-slate-600 dark:text-slate-400 mr-2">•</span>
-                    Optimised parameters that cut energy use
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-slate-600 dark:text-slate-400 mr-2">•</span>
-                    Without slowing production
-                  </li>
-                </ul>
-              </div>
+          {/* Common Objections */}
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
+                Common Objections
+              </h3>
+              <p className="text-slate-600 dark:text-slate-400 text-sm">
+                Hover to see our response
+              </p>
+            </div>
+
+            <div className="space-y-3">
+              {objections.map((item, index) => (
+                <div 
+                  key={index} 
+                  className="group bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden transition-all hover:shadow-md"
+                >
+                  <div className="p-4 cursor-default">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-slate-100 dark:bg-slate-700 rounded flex items-center justify-center text-slate-600 dark:text-slate-400 flex-shrink-0">
+                        {item.icon}
+                      </div>
+                      <p className="font-medium text-slate-900 dark:text-slate-100">
+                        {item.objection}
+                      </p>
+                    </div>
+                    <div className="max-h-0 group-hover:max-h-40 overflow-hidden transition-all duration-300 ease-in-out">
+                      <p className="text-slate-600 dark:text-slate-400 mt-3 pl-11 leading-relaxed">
+                        {item.response}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
