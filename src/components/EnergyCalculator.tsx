@@ -97,7 +97,7 @@ export default function EnergyCalculator({ className = "" }: EnergyCalculatorPro
   }, [energyCostText, smallRobotsText, mediumRobotsText, largeRobotsText, xlargeRobotsText, hoursText, lifetimeText]);
 
   return (
-    <div className={`min-h-dvh p-4 md:p-6 bg-slate-50 dark:bg-slate-800 ${className}`}>
+    <section id="calculator" className={`py-20 px-4 md:px-6 bg-slate-50 dark:bg-slate-800 ${className}`}>
       <div className="mx-auto max-w-7xl">
         <Suspense fallback={null}>
           <UrlSync
@@ -117,10 +117,12 @@ export default function EnergyCalculator({ className = "" }: EnergyCalculatorPro
             setLifetimeText={setLifetimeText}
           />
         </Suspense>
-        <header className="mb-5 md:mb-6">
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-1">Energy Savings Calculator</h1>
-          <p className="text-xs md:text-sm text-black/60 dark:text-white/60">
-            We are a small team of software engineers developing a solution for seamless optimization of robot fleets online or right in your digital twin.
+        <header className="mb-8 md:mb-10 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+            Calculate Your Potential Savings
+          </h2>
+          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            Enter your robot fleet details to see estimated energy and cost savings
           </p>
         </header>
 
@@ -251,7 +253,7 @@ export default function EnergyCalculator({ className = "" }: EnergyCalculatorPro
         </section>
 
       </div>
-    </div>
+    </section>
   );
 }
 
