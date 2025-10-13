@@ -1,49 +1,52 @@
-# SenseFlow - Voice API for Workflow Automation
+# deusXmachina - Robot Fleet Energy Optimization
 
 ## About
-SenseFlow is the world's simplest API for voice calls, designed specifically for low-code/no-code workflow automation platforms like n8n and Make. We enable developers and automation enthusiasts to integrate intelligent voice interactions into their workflows in under 60 seconds.
+deusXmachina helps manufacturing companies optimize their industrial robot fleets to dramatically reduce energy consumption and costs. We specialize in process-level optimization that complements manufacturer hardware optimizations to unlock additional savings of up to 30%.
 
 ## Product
-- **Service**: Voice API for outbound calls
-- **Target Users**: Low-code/no-code developers, workflow automation users
-- **Primary Platforms**: n8n, Make (formerly Integromat)
-- **Setup Time**: Under 60 seconds from signup to first call
+- **Service**: Robot fleet energy optimization
+- **Target Users**: Manufacturing facilities with industrial robots, production line managers, sustainability officers
+- **Robot Types**: All payload categories (Small <16kg, Medium <60kg, Large <225kg, XLarge >225kg)
+- **Deployment**: Integration with digital twins or deployment during maintenance windows
 
-## Key Features
-- Outbound voice calls
-- AI-powered intelligent voice conversations
-- Simple n8n/Make integration
-- Real-time call handling
-- API key management
-- Usage analytics
-- Lightning-fast setup
+## Key Benefits
+- **Lower Energy Bills**: Save thousands of euros per robot annually
+- **Greener Operations**: Reduce CO₂ emissions significantly (tonnes per robot fleet)
+- **More Reliable Lines**: Less mechanical wear and tear, increased uptime
+- **Typical Savings**: 20% energy reduction, with potential for 10-30% improvement
 
-## Pricing
-- **Model**: Pay-per-use (no monthly fees)
-- **Rate**: $0.25 per minute
-- **Free Credits**: $10 free credits for new users
-- **Free Minutes**: Up to 40 minutes of calls to get started
+## How It Works
+- **Input**: Target takt time and robot program
+- **Output**: Optimized motion parameters
+- **Approach**: Process-level optimization that complements vendor hardware optimizations
+- **Integration**: Works with existing digital twins or fits into maintenance windows
 
-## Technical Details
-- **NPM Package**: @senseflow/n8n-node
-- **API Documentation**: https://app.senseflow.io/api/docs
-- **App URL**: https://app.senseflow.io
-- **Integration**: Simple API calls within workflow nodes
+## Typical Results
+Based on standard robot fleet configurations:
+- Small robots (< 16 kg): 1.2 kW average consumption
+- Medium robots (< 60 kg): 2.0 kW average consumption
+- Large robots (< 225 kg): 4.5 kW average consumption
+- XLarge robots (> 225 kg): 7.0 kW average consumption
+
+Example savings for a fleet of 50 small, 20 medium, 10 large, and 2 XLarge robots operating 5,000 hours/year at €0.18/kWh over 5 years:
+- Baseline consumption: ~800 MWh/year
+- 20% reduction: ~€28,500 annual savings, €150,000 over 5 years
+- CO₂ avoided: ~320 tonnes over 5 years
 
 ## Company
-- **Name**: SenseFlow
-- **Contact**: call-me-maybe@senseflow.io
-- **GitHub**: https://github.com/senseflow-io
-- **Focus**: Making voice integration accessible to workflow automation users
+- **Name**: deusXmachina
+- **Contact**: hello@deusxmachina.dev
+- **Website**: https://deusxmachina.dev
+- **Focus**: Making energy optimization accessible and practical for industrial robot operations
 
 ## Getting Started
-1. Sign up at https://app.senseflow.io/signup
-2. Get $10 free credits instantly
-3. Install the n8n node: npm install @senseflow/n8n-node
-4. Make your first call with a simple API call: { call: +1234567890 }
+1. Visit https://deusxmachina.dev/#calculator
+2. Enter your robot fleet configuration
+3. Review projected savings
+4. Contact us to discuss deployment
 
 ## Value Proposition
-Transform your workflows with voice capabilities in minutes, not days. No complex configuration, no monthly commitments - just simple, powerful voice integration for your automation needs.
+We optimize the process, not just the hardware. While robot vendors optimize motion and mechanics, we unlock what's still on the table through process-level optimization. The result: substantial energy savings, lower maintenance costs, reduced emissions, and extended equipment life.
 
 ## Last Updated
-July 24, 2025
+October 13, 2025

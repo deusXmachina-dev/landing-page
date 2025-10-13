@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# Block all web scraping
-# This robots.txt file prevents search engines and other bots from crawling this website
+# Sitemap location
+Sitemap: https://deusxmachina.dev/sitemap.xml

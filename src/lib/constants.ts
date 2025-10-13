@@ -17,9 +17,9 @@ export const CURRENT_YEAR = new Date().getFullYear();
 // Power consumption per robot type (kW)
 export const ROBOT_POWER_CONSUMPTION = {
   SMALL: 1.2,    // < 16 kg
-  MEDIUM: 1.5,   // < 60 kg
-  LARGE: 6,      // < 225 kg
-  XLARGE: 10,    // > 225 kg
+  MEDIUM: 2,   // < 60 kg
+  LARGE: 4.5,      // < 225 kg
+  XLARGE: 7,    // > 225 kg
 } as const;
 
 // CO₂ emissions factor (tCO₂e/MWh)
