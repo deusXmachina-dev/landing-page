@@ -3,6 +3,7 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ROBOT_POWER_CONSUMPTION, CO2_EMISSIONS_FACTOR, ENERGY_SAVINGS_SCENARIOS } from "@/lib/constants";
+import { Button } from "@/components/ui/button";
 
 const currency = new Intl.NumberFormat("cs-CZ", {
   style: "currency",
@@ -209,7 +210,18 @@ export default function EnergyCalculator({ className = "" }: EnergyCalculatorPro
           </div>
 
           <div className="lg:h-full">
-            <div className="rounded-xl border border-black/10 dark:border-white/10 p-4 md:p-6 bg-white dark:bg-black shadow-sm lg:h-full flex flex-col">
+            <div className="rounded-xl border border-black/10 dark:border-white/10 p-4 md:p-6 bg-white dark:bg-black shadow-sm lg:h-full flex flex-col relative">
+              <div className="absolute right-4 top-4 md:right-6 md:top-6">
+                <ShareButton
+                  smallRobotsText={smallRobotsText}
+                  mediumRobotsText={mediumRobotsText}
+                  largeRobotsText={largeRobotsText}
+                  xlargeRobotsText={xlargeRobotsText}
+                  energyCostText={energyCostText}
+                  hoursText={hoursText}
+                  lifetimeText={lifetimeText}
+                />
+              </div>
               <div className="pb-3 border-b border-black/10 dark:border-white/10 mb-5">
                 <h3 className="text-base font-semibold mb-0.5">Projected Savings</h3>
                 <p className="text-[11px] text-black/50 dark:text-white/50">Total over {results.lifetimeYears}-year period</p>
@@ -380,6 +392,76 @@ function ScenarioRow({
       <td className={`py-3 md:py-4 pr-2 md:pr-3 text-sm md:text-base tabular-nums ${assumed ? "font-bold" : ""}`}>{co2Savings}</td>
       <td className={`py-3 md:py-4 pr-2 md:pr-3 text-right text-sm md:text-base tabular-nums ${assumed ? "font-bold" : ""}`}>{lifetimeSavings}</td>
     </tr>
+  );
+}
+
+function ShareButton({
+  smallRobotsText,
+  mediumRobotsText,
+  largeRobotsText,
+  xlargeRobotsText,
+  energyCostText,
+  hoursText,
+  lifetimeText,
+}: {
+  smallRobotsText: string;
+  mediumRobotsText: string;
+  largeRobotsText: string;
+  xlargeRobotsText: string;
+  energyCostText: string;
+  hoursText: string;
+  lifetimeText: string;
+}) {
+  const [copyState, setCopyState] = useState<"idle" | "copied">("idle");
+
+  const handleShare = async () => {
+    if (copyState === "copied") return;
+
+    const params = new URLSearchParams();
+    params.set("sr", smallRobotsText);
+    params.set("mr", mediumRobotsText);
+    params.set("lr", largeRobotsText);
+    params.set("xr", xlargeRobotsText);
+    params.set("ec", energyCostText);
+    params.set("h", hoursText);
+    params.set("lt", lifetimeText);
+
+    const url = `${window.location.origin}${window.location.pathname}?${params.toString()}#calculator`;
+
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopyState("copied");
+      setTimeout(() => {
+        setCopyState("idle");
+      }, 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
+
+  return (
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={handleShare}
+      className="text-xs"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+      </svg>
+      {copyState === "copied" ? "Link copied!" : "Share numbers"}
+    </Button>
   );
 }
 
