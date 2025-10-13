@@ -300,6 +300,8 @@ function UrlSync({
     const ec = searchParams.get("ec");
     const h = searchParams.get("h");
     const lt = searchParams.get("lt");
+    
+    // Set state from query params if they exist
     if (sr !== null) setSmallRobotsText(sr);
     if (mr !== null) setMediumRobotsText(mr);
     if (lr !== null) setLargeRobotsText(lr);
@@ -307,31 +309,13 @@ function UrlSync({
     if (ec !== null) setEnergyCostText(ec);
     if (h !== null) setHoursText(h);
     if (lt !== null) setLifetimeText(lt);
+    
+    // Clear query params from URL after reading
+    if (searchParams.toString()) {
+      router.replace(pathname, { scroll: false });
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  useEffect(() => {
-    const nextParams = new URLSearchParams(searchParams.toString());
-    const setOrDelete = (key: string, value: string) => {
-      const v = value.trim();
-      if (v) nextParams.set(key, v);
-      else nextParams.delete(key);
-    };
-    setOrDelete("sr", smallRobotsText);
-    setOrDelete("mr", mediumRobotsText);
-    setOrDelete("lr", largeRobotsText);
-    setOrDelete("xr", xlargeRobotsText);
-    setOrDelete("ec", energyCostText);
-    setOrDelete("h", hoursText);
-    setOrDelete("lt", lifetimeText);
-
-    const current = searchParams.toString();
-    const next = nextParams.toString();
-    if (current === next) return;
-
-    const url = next ? `${pathname}?${next}` : pathname;
-    router.replace(url, { scroll: false });
-  }, [smallRobotsText, mediumRobotsText, largeRobotsText, xlargeRobotsText, energyCostText, hoursText, lifetimeText, pathname, router, searchParams]);
 
   return null;
 }
