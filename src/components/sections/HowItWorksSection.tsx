@@ -13,44 +13,16 @@ export function HowItWorksSection() {
             </p>
           </div>
 
-          {/* Input/Output Visual Flow */}
-          <div className="max-w-5xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-              {/* Input Box */}
-              <div className="flex-1 w-full">
-                <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border-2 border-slate-200 dark:border-slate-700">
-                  <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4">
-                    Input
-                  </div>
-                  <div className="space-y-3">
-                    <div className="bg-white dark:bg-slate-900 rounded px-4 py-3 border border-slate-200 dark:border-slate-700">
-                      <p className="text-slate-900 dark:text-slate-100 font-medium">Target takt time</p>
-                    </div>
-                    <div className="bg-white dark:bg-slate-900 rounded px-4 py-3 border border-slate-200 dark:border-slate-700">
-                      <p className="text-slate-900 dark:text-slate-100 font-medium">Robot program</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Arrow */}
-              <div className="flex-shrink-0 text-slate-400 dark:text-slate-600 rotate-90 md:rotate-0">
-                <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </div>
-
-              {/* Output Box */}
-              <div className="flex-1 w-full">
-                <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border-2 border-slate-900 dark:border-slate-100">
-                  <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4">
-                    Output
-                  </div>
-                  <div className="bg-white dark:bg-slate-900 rounded px-4 py-3 border border-slate-200 dark:border-slate-700">
-                    <p className="text-slate-900 dark:text-slate-100 font-medium">Optimised parameters</p>
-                  </div>
-                </div>
-              </div>
+          {/* Video */}
+          <div className="max-w-4xl mx-auto">
+            <div className="relative rounded-lg overflow-hidden shadow-lg" style={{ paddingBottom: '62.5%', height: 0 }}>
+              <iframe 
+                src="https://www.loom.com/embed/05a20beab7c24e4db594f289f69bbe1f?sid=5e1c72a5-83ad-4c8d-b1f0-49c6a974bc9a" 
+                frameBorder="0" 
+                allowFullScreen
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                className="border-0"
+              />
             </div>
           </div>
         </div>
