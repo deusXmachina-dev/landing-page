@@ -120,7 +120,7 @@ export default function EnergyCalculator({ className = "" }: EnergyCalculatorPro
         </Suspense>
         <header className="mb-8 md:mb-10 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
-            Calculate Your Potential Savings
+            Calculate Savings
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             Enter your robot fleet details to see estimated energy and cost savings

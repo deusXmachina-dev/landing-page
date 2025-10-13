@@ -21,7 +21,7 @@ export function HeroSection() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
               <CTAButton size="lg" className="px-8 py-6 text-lg font-medium" href="#calculator">
-                Calculate Your Savings
+                Calculate Savings
               </CTAButton>
               <Button variant="outline" size="lg" className="px-8 py-6 text-lg font-medium" asChild>
                 <a href="#how-it-works">See How It Works</a>

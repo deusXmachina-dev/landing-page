@@ -37,7 +37,7 @@ export function Navbar() {
         {/* CTA Button */}
         <div className="flex items-center">
           <CTAButton size="default" className="w-auto" href="#calculator">
-            Calculate Your Savings
+            Calculate Savings
           </CTAButton>
         </div>
       </div>
