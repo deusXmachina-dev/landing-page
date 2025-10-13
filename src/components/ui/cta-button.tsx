@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { SIGNUP_URL } from "@/lib/constants";
 
 interface CTAButtonProps {
   children: React.ReactNode;
@@ -12,7 +11,7 @@ interface CTAButtonProps {
 export function CTAButton({ 
   children, 
   className = "", 
-  href = SIGNUP_URL,
+  href = "",
   size = "lg",
   variant = "default",
 }: CTAButtonProps) {

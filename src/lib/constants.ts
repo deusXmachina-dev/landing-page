@@ -1,14 +1,8 @@
-// App URLs
-export const APP_URL = "https://app.senseflow.io";
-export const LOGIN_URL = `${APP_URL}/login`;
-export const SIGNUP_URL = LOGIN_URL;
-export const DOCS_URL = `${APP_URL}/api/docs`;
-
 // Contact
-export const CONTACT_EMAIL = "call-me-maybe@senseflow.io";
+export const CONTACT_EMAIL = "hello@deusxmachina.dev";
 
 // Social Links
-export const GITHUB_URL = "https://github.com/senseflow-io";
+export const GITHUB_URL = "https://github.com/deusXmachina-dev";
 
 // Pricing
 export const PRICE_PER_MINUTE = 0.25;
@@ -16,11 +10,8 @@ export const FREE_CREDITS_AMOUNT = 10;
 export const FREE_CREDITS_MINUTES = Math.floor(FREE_CREDITS_AMOUNT / PRICE_PER_MINUTE); // 40 minutes
 
 // Company
-export const COMPANY_NAME = "SenseFlow, Inc.";
+export const COMPANY_NAME = "SenseFlow, Inc";
 export const CURRENT_YEAR = new Date().getFullYear();
-
-// Package
-export const NPM_PACKAGE_NAME = "@senseflow-io/n8n-nodes-senseflow";
 
 // Energy Calculator Constants
 // Power consumption per robot type (kW)

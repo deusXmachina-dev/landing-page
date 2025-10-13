@@ -1,42 +1,37 @@
 import { Logo } from "@/components/ui/logo";
-import { CONTACT_EMAIL, GITHUB_URL, COMPANY_NAME, CURRENT_YEAR, DOCS_URL } from "@/lib/constants";
+import { CONTACT_EMAIL, GITHUB_URL, COMPANY_NAME, CURRENT_YEAR } from "@/lib/constants";
 import Link from "next/link";
 
 export function Footer() {
   return (
     <footer className="bg-slate-50 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4">
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <Logo href="/" className="mb-4" />
             <p className="text-slate-600 dark:text-slate-400 max-w-md">
-              The world&apos;s simplest API for outbound calls. Integrate intelligent voice interactions into your n8n/Make workflows in minutes.
+              Optimizing industrial robot energy consumption through intelligent process optimization. Save costs, reduce emissions, and improve efficiency.
             </p>
           </div>
 
           {/* Product Links */}
           <div>
-            <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-4">Product</h3>
+            <h3 className="font-semibold text-slate-900 dark:text-slate-100 mb-4">Navigation</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#features" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:translate-x-1 inline-block">
-                  Features
+                <Link href="#calculator" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:translate-x-1 inline-block">
+                  Calculator
                 </Link>
               </li>
               <li>
-                <Link href="#quick-start" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:translate-x-1 inline-block">
-                  Quick Start
+                <Link href="#how-it-works" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:translate-x-1 inline-block">
+                  How It Works
                 </Link>
               </li>
               <li>
-                <Link href="#pricing" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:translate-x-1 inline-block">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href={DOCS_URL} className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:translate-x-1 inline-block" target="_blank" rel="noopener noreferrer">
-                  Documentation
+                <Link href="#faq" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:translate-x-1 inline-block">
+                  FAQ
                 </Link>
               </li>
             </ul>
