@@ -5,8 +5,8 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="bg-slate-50 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4">
+      <div className="container mx-auto px-6 md:px-4 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <Logo href="/" className="mb-4" />
@@ -61,11 +61,11 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-200 dark:border-slate-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-slate-500 dark:text-slate-400 text-sm">
+        <div className="border-t border-slate-200 dark:border-slate-700 mt-12 md:mt-16 pt-8 md:pt-10 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+          <p className="text-slate-500 dark:text-slate-400 text-sm text-center md:text-left">
             © {CURRENT_YEAR} {COMPANY_NAME}. All rights reserved.
           </p>
-          <div className="flex items-center space-x-6 mt-4 md:mt-0">
+          <div className="flex items-center space-x-6">
             <a 
               href={GITHUB_URL}
               className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
