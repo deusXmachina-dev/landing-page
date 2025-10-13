@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ROBOT_POWER_CONSUMPTION, CO2_EMISSIONS_FACTOR, ENERGY_SAVINGS_SCENARIOS } from "@/lib/constants";
 
@@ -291,8 +291,6 @@ function UrlSync({
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-
-  const { useEffect } = require("react");
 
   useEffect(() => {
     const sr = searchParams.get("sr");
