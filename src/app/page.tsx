@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/sections/HeroSection";
 import EnergyCalculator from "@/components/EnergyCalculator";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
+import { FAQSection } from "@/components/sections/FAQSection";
 import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <EnergyCalculator />
       <HowItWorksSection />
+      <FAQSection />
       <Footer />
     </div>
   );

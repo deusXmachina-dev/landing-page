@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { CTAButton } from "@/components/ui/cta-button";
 import { Logo } from "@/components/ui/logo";
-import { LOGIN_URL, DOCS_URL } from "@/lib/constants";
 import Link from "next/link";
 
 export function Navbar() {
@@ -14,44 +12,32 @@ export function Navbar() {
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center space-x-8">
           <Link 
-            href="#quick-start" 
+            href="#calculator" 
             className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:scale-105 relative group"
           >
-            Quick Start
+            Calculator
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-600 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link 
-            href="#features" 
+            href="#how-it-works" 
             className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:scale-105 relative group"
           >
-            Features
+            How It Works
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-600 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link 
-            href="#pricing" 
+            href="#faq" 
             className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:scale-105 relative group"
           >
-            Pricing
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-600 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link 
-            href={DOCS_URL} 
-            className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-300 hover:scale-105 relative group"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            FAQ
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-slate-600 transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </nav>
 
-        {/* Sign In Button */}
-        <div className="flex items-center space-x-4">
-          <CTAButton size="default" className="w-auto" variant="outline" href={LOGIN_URL}>
-            Log In
-          </CTAButton>
-          <CTAButton size="default" className="w-auto">
-            Get Started
+        {/* CTA Button */}
+        <div className="flex items-center">
+          <CTAButton size="default" className="w-auto" href="#calculator">
+            Calculate Your Savings
           </CTAButton>
         </div>
       </div>
