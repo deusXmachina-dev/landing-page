@@ -34,35 +34,42 @@ export function HowItWorksSection() {
             </p>
           </div>
 
-          {/* Input/Output Box */}
-          <div className="max-w-4xl mx-auto mb-20">
-            <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-8 md:p-12 border border-slate-200 dark:border-slate-700">
-              <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-                <div>
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">
-                    You give us:
-                  </h3>
-                  <ul className="space-y-3 text-slate-600 dark:text-slate-400">
-                    <li className="flex items-center text-lg">
-                      <span className="text-slate-900 dark:text-slate-100 mr-3">→</span>
-                      Target takt time
-                    </li>
-                    <li className="flex items-center text-lg">
-                      <span className="text-slate-900 dark:text-slate-100 mr-3">→</span>
-                      Robot program
-                    </li>
-                  </ul>
+          {/* Input/Output Visual Flow */}
+          <div className="max-w-5xl mx-auto mb-20">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+              {/* Input Box */}
+              <div className="flex-1 w-full">
+                <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border-2 border-slate-200 dark:border-slate-700">
+                  <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4">
+                    Input
+                  </div>
+                  <div className="space-y-3">
+                    <div className="bg-white dark:bg-slate-900 rounded px-4 py-3 border border-slate-200 dark:border-slate-700">
+                      <p className="text-slate-900 dark:text-slate-100 font-medium">Target takt time</p>
+                    </div>
+                    <div className="bg-white dark:bg-slate-900 rounded px-4 py-3 border border-slate-200 dark:border-slate-700">
+                      <p className="text-slate-900 dark:text-slate-100 font-medium">Robot program</p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">
-                    We give you:
-                  </h3>
-                  <ul className="space-y-3 text-slate-600 dark:text-slate-400">
-                    <li className="flex items-center text-lg">
-                      <span className="text-slate-900 dark:text-slate-100 mr-3">→</span>
-                      Optimised parameters
-                    </li>
-                  </ul>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex-shrink-0 text-slate-400 dark:text-slate-600 rotate-90 md:rotate-0">
+                <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+
+              {/* Output Box */}
+              <div className="flex-1 w-full">
+                <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border-2 border-slate-900 dark:border-slate-100">
+                  <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4">
+                    Output
+                  </div>
+                  <div className="bg-white dark:bg-slate-900 rounded px-4 py-3 border border-slate-200 dark:border-slate-700">
+                    <p className="text-slate-900 dark:text-slate-100 font-medium">Optimised parameters</p>
+                  </div>
                 </div>
               </div>
             </div>

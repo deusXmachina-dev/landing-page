@@ -16,7 +16,7 @@ export const FREE_CREDITS_AMOUNT = 10;
 export const FREE_CREDITS_MINUTES = Math.floor(FREE_CREDITS_AMOUNT / PRICE_PER_MINUTE); // 40 minutes
 
 // Company
-export const COMPANY_NAME = "SenseFlow";
+export const COMPANY_NAME = "SenseFlow, Inc.";
 export const CURRENT_YEAR = new Date().getFullYear();
 
 // Package

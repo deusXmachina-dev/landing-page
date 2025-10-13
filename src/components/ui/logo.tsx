@@ -19,16 +19,11 @@ export const Logo: React.FC<LogoProps> = ({
     <div className={cn("flex items-center", className)}>
       <Image
         src="/logo.png"
-        alt="SenseFlow Logo"
-        width={32}
+        alt="deusXmachina Logo"
+        width={collapsed ? 32 : 180}
         height={32}
-        className={cn(collapsed ? "mx-auto" : "mr-3")}
+        className={cn(collapsed ? "mx-auto" : "")}
       />
-      {!collapsed && (
-        <h1 className="text-xl font-bold text-slate-900 dark:text-slate-100">
-          SenseFlow
-        </h1>
-      )}
     </div>
   );
 
