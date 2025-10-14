@@ -10,7 +10,7 @@ export function HeroSection() {
           <div className="text-center mb-16">
             {/* Main Headline */}
             <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 dark:text-slate-100 mb-6 leading-tight">
-              We optimize your robots, you save energy
+              Optimize your robots, save energy
             </h1>
 
             {/* Key Value Proposition */}

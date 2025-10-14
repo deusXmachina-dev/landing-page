@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Figtree, Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
+  weight: ["700"], // Bold
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // Regular, Medium, SemiBold, Bold
 });
 
 export const metadata: Metadata = {
@@ -68,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${figtree.variable} antialiased`}
       >
         <Navbar />
         {children}
