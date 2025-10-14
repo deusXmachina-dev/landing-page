@@ -15,7 +15,7 @@ export function HeroSection() {
 
             {/* Key Value Proposition */}
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Let us help you slash energy use and emissions by up to 30% while easing mechanical stress.
+              Slash energy use and emissions by up to 30% while easing mechanical stress.
             </p>
 
             {/* CTAs */}
