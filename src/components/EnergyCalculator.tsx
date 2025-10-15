@@ -200,7 +200,7 @@ export default function EnergyCalculator({ className = "" }: EnergyCalculatorPro
                         onChange={setLifetimeText}
                       />
                       <p className="mt-1 text-[10px] text-black/50 dark:text-white/50">
-                        Duration the solution will be deployed (e.g., production line lifetime)
+                        E.g. product line lifetime
                       </p>
                     </div>
                   </div>
