@@ -18,7 +18,7 @@ export const CURRENT_YEAR = new Date().getFullYear();
 export const ROBOT_POWER_CONSUMPTION = {
   SMALL: 1.2,    // < 16 kg
   MEDIUM: 2,   // < 60 kg
-  LARGE: 4.5,      // < 225 kg
+  LARGE: 5,      // < 225 kg
   XLARGE: 7,    // > 225 kg
 } as const;
 
