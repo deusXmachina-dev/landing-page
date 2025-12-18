@@ -36,8 +36,8 @@ export function Navbar() {
 
         {/* CTA Button */}
         <div className="flex items-center">
-          <CTAButton size="default" className="w-auto" href="#calculator">
-            Calculate Savings
+          <CTAButton size="default" className="w-auto" href="https://github.com/deusXmachina-dev/ProcessSimulatePlugin/">
+            Try Now
           </CTAButton>
         </div>
       </div>
